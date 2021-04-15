@@ -1,0 +1,35 @@
+{
+	"Period": {
+		"0": "Today",
+		"1": "Tonight",
+		"2": "Wednesday",
+		"3": "WednesdayNight",
+		"4": "Thursday",
+		"5": "ThursdayNight",
+		"6": "Friday",
+		"7": "FridayNight",
+		"8": "Saturday"
+	},
+	"Short_descriptions": {
+		"0": "Mostly Sunny",
+		"1": "Mostly Clear",
+		"2": "Slight ChanceShowers",
+		"3": "Mostly Clear",
+		"4": "Sunny",
+		"5": "Clear",
+		"6": "Sunny",
+		"7": "Mostly Clear",
+		"8": "Mostly Sunny"
+	},
+	"Temperatures": {
+		"0": "High: 69 \u00b0F",
+		"1": "Low: 59 \u00b0F",
+		"2": "High: 73 \u00b0F",
+		"3": "Low: 55 \u00b0F",
+		"4": "High: 64 \u00b0F",
+		"5": "Low: 49 \u00b0F",
+		"6": "High: 63 \u00b0F",
+		"7": "Low: 54 \u00b0F",
+		"8": "High: 71 \u00b0F"
+	}
+}

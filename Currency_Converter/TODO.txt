@@ -1,0 +1,4 @@
+TODO:
+1 . Make a API request
+2 . 07/1/21
+	Create a connection with the API 
