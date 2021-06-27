@@ -1,20 +1,18 @@
-from tkinter import *
-
-root = Tk()
 board = [
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0]
+        [3, 0, 1, 0, 0, 9, 0, 0, 0],
+        [0, 0, 0, 4, 6, 0, 0, 3, 5],
+        [0, 9, 0, 0, 0, 0, 0, 0, 0],
+        [5, 0, 0, 0, 0, 6, 3, 9, 0],
+        [8, 3, 0, 0, 2, 0, 0, 7, 1],
+        [0, 1, 6, 3, 0, 0, 0, 0, 8],
+        [0, 0, 0, 0, 0, 0, 0, 2, 0],
+        [4, 6, 0, 0, 1, 8, 0, 0, 0],
+        [0, 0, 0, 6, 0, 0, 8, 0, 3]
 ]
 
 
 def solve(bo):
+    """Solve a location"""
     find = find_empty(bo)
     if not find:
         return True
@@ -80,16 +78,7 @@ def find_empty(bo):
     return None
 
 
-def draw(bo):
-    for i in range(len(bo)):
-        for j in range(len(bo[i])):
-            Label(root, text=bo[i][j], borderwidth=1, relief="solid", font='comicsans 12').grid(
-                row=i, column=j, ipadx=10, ipady=5)
-    mainloop()
-
-
 print_board(board)
 solve(board)
 print("\n_____________________________________\n")
 print_board(board)
-draw(board)

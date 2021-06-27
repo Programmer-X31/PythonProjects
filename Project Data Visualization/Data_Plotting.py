@@ -3,11 +3,10 @@ from matplotlib import style
 
 style.use('ggplot')
 
-y = [3, 10, 5, 16, 8, 4, 2, 1]
-x = [num * 1 for num in range(1, (len(y) + 1), 1)]
+x = [0, 400, 800, 1200, 1600, 2000]
+y = [num * 10 for num in range(6)]
+x2 = [4000, 3200, 2400, 1600, 800, 0]
 
 plt.plot(x, y)
-plt.title('Collatz Sequence')
-plt.xlabel('Collatz No')
-plt.ylabel('No of steps')
+plt.plot(x2, y)
 plt.show()
